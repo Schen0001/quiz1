@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <a href="http://localhost:3000/sign_in"><img src="images/chicken.png" alt="chicken logo" width="75px" height="50px"></a>
+    <nav>
+        <button type="button" class="btn btn-secondary" style="margin-right: 1em;"><a style="color: white; text-decoration: none;" href="#">Cluck!</a></button>
+        <button type="button" class="btn btn-secondary"><a style="color: white; text-decoration: none;" href="http://localhost:3000/sign_in">Sign out</a></button>
+    </nav>
+
+    <div class="signedInDiv">
+        <form action="submit">
+            <label for="contentTextArea" style="margin-right: 17em;">Content</label><br>
+            <textarea name="contentTextArea" id="contentTextArea" cols="33" rows="4" placeholder="Whatchoo cluckin' 'bout?"></textarea><br>
+            <label for="imageUrl" style="margin-right: 17em;">Image Url</label><br>
+            <input type="url" name="url" id="url" placeholder="https://www.youtube.com/watch?v=dQw4w9WgXcQ" pattern="https://.*" size="30" required><br>
+            <button class="btn btn-outline-dark" type="submit" style="margin: 5px; margin-left: 18em;">Cluck!</button>
+        </form>
+    </div>
+
+<%- include('./partials/footer') %>
+
+
+<%# click the youtube link %>
