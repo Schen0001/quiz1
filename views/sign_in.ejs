@@ -1,0 +1,21 @@
+<%- include('./partials/header') %>
+<div class="signInDiv">
+    <% if (loggedInUserName) { %>
+        <span class="navbar-text mr-2">
+            <%= loggedInUserName %>
+        </span>
+        <% } else { %>
+            <form action="/sign_in" method="POST" class="form-inline">
+                <input class="form-control mr-2" type="text" name="username" placeholder="e.g. Madam Welminster">
+                <button class="btn btn-outline-dark" type="submit" style="margin: 5px; margin-left: 12em;">Sign In</button>
+            </form>
+            <% } %>
+</div>
+<%- include('./partials/footer') %>
+
+
+
+
+
+
+
